@@ -15,14 +15,18 @@
   float: left;
 }
 
-.navbar-left{
-  width: 50%;
-  height: 100%;
-  padding: 25px 25px;
-}
 
 .navbar-left img{
   width: 15%;
+  display: inline;
+}
+
+.navbar-left{
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  line-height: 80px;
 }
 
 .navbar-left a{
@@ -39,9 +43,10 @@
 .item{
   display: inline-block;
   line-height: 80px;
+  position: relative;
 }
 
-.item a{
+.item > a{
   margin-left: 15px;
   text-decoration: none;
   color: grey;
@@ -55,4 +60,21 @@
   padding: 10px 15px;
   border-radius: 20px;
   font-weight: 700;
+}
+
+.dropdown{
+  display: none;
+  position:absolute;
+  padding: 10px;
+  width: 200px;;
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
+}
+
+.dropdown-item a{
+  text-decoration: none;
+  color: grey;
+  margin-bottom: 5px;
 }
